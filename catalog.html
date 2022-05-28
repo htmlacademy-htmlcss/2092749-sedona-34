@@ -46,16 +46,16 @@
 
     <main>
       <h1 class="main-hotels">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
-            <img class="picture-home" src="" alt="Домик." />
+            <img class="picture-home" src="" alt="Домик.">
           </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
 
       <form action="" method="post">
         <fieldset class="catalog-filter-group">
@@ -68,26 +68,17 @@
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <label>
-            <input
-              type="radio"
-              name="Гостиница"
-              value="hotel"
-              checked
-            />Гостиница
+            <input type="radio" name="Гостиница" value="hotel" checked/>Гостиница
           </label>
           <label>
             <input type="radio" name="Гостиница" value="motel" />Мотель
           </label>
           <label>
-            <input
-              type="radio"
-              name="Гостиница"
-              value="apartments"
-            />Апартаменты
+            <input type="radio" name="Гостиница" value="apartments"/>Апартаменты
           </label>
         </fieldset>
-        <a class="button" href="#">Применить</a>
-        <a class="button" href="#">Сбросить</a>
+        <button class="submit">Применить</button>
+        <button class="submit">Сбросить</button>
       </form>
     </main>
 
@@ -117,6 +108,8 @@
         <p class="hotel-card-price">От 4000 р</p>
         <a class="hotel-card-more button" href="#">Подробнее</a>
         <a class="hotel-card-favorites button" href="#">В избранное</a>
+        <a class="hotel-stars" href="#"></a>
+        <span class="hotel-rating">Рейтинг: 8,5</span>
       </li>
 
       <li class="hotel-card">
@@ -127,7 +120,9 @@
         <p>Гостиница</p>
         <p class="hotel-card-price">От 5000 р</p>
         <a class="hotel-card-more button" href="#">Подробнее</a>
-        <a class="hotel-card-favorites button" href="#">В избранном</a>
+        <a class="hotel-card-favorites button" href="#">В избранном
+        <a class="hotel-stars" href="#"></a>
+        <span class="hotel-rating">Рейтинг: 9,2</span>
       </li>
 
       <li class="hotel-card">
@@ -139,6 +134,8 @@
         <p class="hotel-card-price">От 2500 р</p>
         <a class="hotel-card-more button" href="#">Подробнее</a>
         <a class="hotel-card-favorites button" href="#">В избранное</a>
+        <a class="hotel-stars" href="#"></a>
+        <span class="hotel-rating">Рейтинг: 6,9</span>
       </li>
 
       <li class="hotel-card">
@@ -150,6 +147,8 @@
         <p class="hotel-card-price">От 1500 р</p>
         <a class="hotel-card-more button" href="#">Подробнее</a>
         <a class="hotel-card-favorites button" href="#">В избранное</a>
+        <a class="hotel-stars" href="#"></a>
+        <span class="hotel-rating">Рейтинг: 5,0</span>
       </li>
     </ul>
 
@@ -182,25 +181,11 @@
 
     <footer class="footer">
       <h2 class="footer-newsletter">Подпишитесь на рассылку</h2>
-      <span
-        >Только полезная информация и никакого спама, честное
-        бойскаутское!</span
-      >
-      <form
-        class="form-newsletter"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-      >
+      <span>Только полезная информация и никакого спама, честное бойскаутское!</span>
+      <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email</label>
-        <input
-          type="email"
-          name="newsletter-email"
-          id="newsletter-email"
-          placeholder="ваш e-mail"
-        />
-        <button class="button newsletter-button" type="submit">
-          Отправить
-        </button>
+        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="ваш e-mail"/>
+        <button class="button newsletter-button" type="submit">Отправить</button>
       </form>
       <section class="footer-social">
         <ul class="footer-social-list">
