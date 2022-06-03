@@ -40,14 +40,14 @@
               <span class="">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-want-here">
             <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <img src="images/logo/logo-welcame-sedona.svg" alt="Добро пожаловать в Седону">
+      <img class="imades-welcame-sedona" src="images/logo/logo-welcame-sedona.svg" alt="Добро пожаловать в Седону">
       <h2 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </main>
@@ -69,7 +69,7 @@
               <p class="features-dicscription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
 
-            <li class="features-item">
+            <li class="features-item-food">
               <img src="images/icon/food.svg" width="74" height="70" alt="Еда">
               <h3 class="features-title">Еда</h3>
               <p class="features-dicscription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
@@ -83,8 +83,8 @@
           </ul>
         </li>
 
-        <li class="advantage-item">
-          <img src="images/photo-devil's bridge.jpg" width="800" height="384" alt="Мост Дьявола ">
+        <li class="advantage-item-bridge">
+          <img src="images/photo-devils-bridge.jpg" width="800" height="384" alt="Мост Дьявола ">
           <h3 class="advantage-title">Там есть мост дьявола</h3>
           <p class="advantage-number">№2</p>
           <p class="advantage-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -96,7 +96,7 @@
           <p class="advantage-discription">Все достопримечательности находятся очень близко</p>
         </li>
 
-        <li class="advantage-item">
+        <li class="advantage-item-road">
           <h3 class="advantage-title">Красивая дорога</h3>
           <p class="advantage-number">№4</p>
           <p class="advantage-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -117,14 +117,16 @@
     </section>
 
     <footer class="footer">
-      <h2 class="footer-newsletter">Подпишитесь на рассылку</h2>
-      <span class="newsletter-discription">Только полезная информация и никакого спама, честное бойскаутское!</span>
+     <section class="newsletter"> 
+        <h2 class="footer-newsletter">Подпишитесь на рассылку</h2>
+        <span class="newsletter-discription">Только полезная информация и никакого спама, честное бойскаутское!</span>
 
-      <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="newsletter-email">Email</label>
-        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="ваш e-mail"/>
-        <button class="button newsletter-button" type="submit">Отправить</button>
-      </form>
+        <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="ваш e-mail"/>
+          <button class="button newsletter-button" type="submit">Отправить</button>
+        </form>
+     </section>
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
