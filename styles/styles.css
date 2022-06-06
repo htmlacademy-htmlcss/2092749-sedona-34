@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family:"PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -6,7 +6,7 @@
     font-display: swap;
   }
   
-  @font-face {
+@font-face{
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -14,29 +14,22 @@
     font-display: swap;
   }
   
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("fonts/pt-sans-italic.woff2") format("woff2");
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
-    font-display: swap;
-  }
-  body {
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #242424;
-    background-color: #a05217;
+    background-color: #fdfdfd;
   }
- .header{
+.header{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -44,6 +37,29 @@
     color: #000000;
     background-color: #FFFFFF;
   }
+
+ .navigation{
+   display: flex;
+   width: 1200px;
+   margin: 0 auto;
+ } 
+
+.navigation-logo{
+  padding-left: 70px;
+  padding-right: 30px;
+
+}
+ .navigation-list {
+  margin: 0;
+  width: 390px;
+ 
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+ 
+}
 
  .navigation-link{
     font-family: 'PT Sans';
@@ -53,14 +69,19 @@
     background: #FFFFFF;
     text-transform: capitalize;
   }
- .main{
-    color:#FFFFFF ;
-    background-color: rgb(19, 19, 80);
-    background-image: url("/images/decorative/background-mountains.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
- .main-title{
+
+.main-container{
+    flex-grow: 1;
+
+}
+
+.section-welcame{
+  background-image: url("/images/decorative/background-mountains.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+}
+ .welcame-title{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -68,12 +89,20 @@
     text-transform: uppercase;
     color: #000000;
  }
- .main-text{
+ .welcame-text{
     font-weight: 400;
     text-align: center;
     color: #333333;
  }
- .advantage-title{
+
+.section-subtitle{
+  width: 1200px;
+  height: 282px;
+  background-color: #FFFFFF;
+}
+
+
+.advantage-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -81,11 +110,54 @@
     text-transform: uppercase;
     color: #FFFFFF;
  }
- .advantage-background{
-  background-color:#82B3D3;
+
+.section-real-city{
+    display: flex;
+    justify-content:;
  }
 
- .features-title{
+.features-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+} 
+
+.features-item{
+  width: 400px;
+  height: 384px;
+}
+
+.features-item-home{
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.features-item-foot{
+  background: #FFFFFF;
+}
+.features-item-souvenir{
+    
+}
+    
+.advantage-item-bridge{
+    display: flex;
+}
+
+.discription-bridge{
+    width: 400px;
+    height: ;
+}
+
+.advantage-background{
+  background-color:#82B3D3;
+  width: 400px;
+  height: 384px;
+ }
+ .advantage-foto{
+   width: 800px;
+   height: 384px;
+ }
+ 
+.features-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -94,24 +166,24 @@
     color: #000000;
 }
 
- .advantage-number{
+.advantage-number{
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
    text-align: center;
    color: #FFFFFF;
- }
+}
 
- .advantage-discription{
+.advantage-discription{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
 
- }
+}
 
- .features-dicscription{
+.features-dicscription{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -324,8 +396,19 @@
   background: rgba(131, 179, 211, 0.2);
 }
 
-.navigation-item-want-here{
-  background-color: #756157;
+.navigation-link-batton{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756157;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 160px;
+    height: ;
+
 }
 
 .interested{
@@ -335,9 +418,16 @@
 .newsletter{
   background-image: url("../images/decorative/background-canyon.jpg");
   background-size: 100% auto;
+}
+
+.main-catalog{
+    background-image: url("../images/decorative/background-main.jpg");
 
 }
 
 .imades-welcame-sedona{
-  im
+  display: flex;
+  margin: 0 auto;
+  padding-top: 51px;
 }
+
