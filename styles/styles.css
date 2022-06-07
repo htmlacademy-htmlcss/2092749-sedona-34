@@ -238,6 +238,21 @@ body{
       color: #000000;
   }
 
+ .footer-social{
+   justify-content: space-between;
+   display: flex;
+   width: 1200px;
+   height: 120px;
+ } 
+
+.footer-social-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  justify-self: start;
+}
+
   .footer-newsletter{
       font-weight: 700;
       font-size: 30px;
@@ -250,6 +265,7 @@ body{
       font-weight: 400;
       text-align: center;
       color: #FFFFFF;
+      padding-right: 337px;
  }
 
  .contacts-phone{
@@ -259,6 +275,7 @@ body{
       text-align: center;
       text-transform: uppercase;
       color: #000000;
+      width: 331px;
  }
 
  .main-hotels{
@@ -427,6 +444,8 @@ body{
 }
 
 .newsletter{
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   height: 411px;
   background-image: url("../images/decorative/background-canyon.jpg");
@@ -435,12 +454,21 @@ body{
 
 .main-catalog{
     background-image: url("../images/decorative/background-main.jpg");
-
+    background-repeat: no-repeat;
+    width: 1200px;
 }
 
 .imades-welcame-sedona{
   display: flex;
   margin: 0 auto;
   padding-top: 51px;
+  
 }
 
+.catalog-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+}
