@@ -327,6 +327,7 @@ C
 }
 .breadcrumbs{
   display: flex;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -334,6 +335,7 @@ C
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  padding-right: 29px;
 }
 
 .catalog-filter-title {
@@ -377,6 +379,7 @@ C
 }
 
 .hotel-card{
+  padding: 20px;
   list-style-type: none;
 }
 
@@ -387,7 +390,7 @@ C
   color: #000000;
 }
 
-.hotel-card-more button {
+.hotel-card-more{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -396,6 +399,11 @@ C
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: #756157;
+  border-radius: 4px;
+  padding: 9px 15px 8px 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hotel-card-favorites button {
@@ -541,7 +549,7 @@ C
 
 .catalog-list {
 
-  padding: 0;
+  padding: ;
   display: flex;
   width: 1056px;
   margin: auto;
@@ -549,7 +557,40 @@ C
 }
 
 .catalog {
-  padding-left: 73px;
+  padding-top: 0;
+
+}
+.select-control{
+    margin-left: 191px;
+    margin-right: 78px;
+
+}
+
+.sorting-container .button{
+  width: 48px;
+  height: 48px;
+  background-color: #000;
+}
+
+.sorting-container{
+    display: flex;
+    margin: 50px 71px 56px 72px;
+}
+
+.search-results{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.pagination-list{
+  display: flex;
+}
+
+.pagination{
+
+
 }
 
 .visually-hidden {

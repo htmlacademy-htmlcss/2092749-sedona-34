@@ -49,7 +49,7 @@
       <h1 class="main-hotels">Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"></a>
+          <a class="breadcrumbs-link" href="index.html">1</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -80,22 +80,24 @@
         <button class="button-reset">Сбросить</button>
       </form>
       <div class="catalog">
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала дешёвые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="popular">Сначала популярное</option>
-        </select>
+        <div class="sorting-container">
+          <p class="search-results">Найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала дешёвые</option>
+            <option value="cheap">Сначала дорогие</option>
+            <option value="popular">Сначала популярное</option>
+          </select>
 
-        <a class="button icon-table" href="#">
-          <span class="visually-hidden">Показать таблицу</span>
-        </a>
-        <a class="button icon-slideshow" href="#">
-          <span class="visually-hidden">Показать слайды</span>
-        </a>
-        <a class="button icon-list" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-
+          <a class="button icon-table" href="#">
+            <span class="visually-hidden">Показать таблицу</span>
+          </a>
+          <a class="button icon-slideshow" href="#">
+            <span class="visually-hidden">Показать слайды</span>
+          </a>
+          <a class="button icon-list" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="catalog-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -153,33 +155,34 @@
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link-active">1</a>
+            </li>
 
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link-active">1</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <span class="pagination-span">Гостиниц на странице: 4</span>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <span class="pagination-span">Гостиниц на странице: 4</span>
+      </div>
       </div>
     </main>
 
