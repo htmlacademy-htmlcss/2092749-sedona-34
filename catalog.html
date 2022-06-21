@@ -79,7 +79,7 @@
           </fieldset>
           <button class="button-submit">Применить</button>
           <button class="button-reset">Сбросить</button>
-       </form>
+        </form>
       </div>
       <div class="catalog">
         <div class="sorting-container">
@@ -109,8 +109,10 @@
             </a>
             <p class="hotel">Гостиница</p>
             <p class="hotel-card-price">От 4000 р</p>
-            <a class="hotel-card-more button" href="#">Подробнее</a>
-            <a class="hotel-card-favorites button" href="#">В избранное</a>
+            <div class="catalog-buttons">
+              <a class="hotel-card-more button" href="#">Подробнее</a>
+              <a class="hotel-card-favorites button" href="#">В избранное</a>
+            </div>
             <a class="hotel-stars" href="#"></a>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
@@ -123,10 +125,12 @@
             </a>
             <p class="hotel">Гостиница</p>
             <p class="hotel-card-price">От 5000 р</p>
-            <a class="hotel-card-more button" href="#">Подробнее</a>
-            <a class="hotel-card-favorites button" href="#">В избранном
-              <a class="hotel-stars" href="#"></a>
-              <span class="hotel-rating">Рейтинг: 9,2</span>
+            <div class="catalog-buttons">
+              <a class="hotel-card-more button" href="#">Подробнее</a>
+              <a class="hotel-card-favorites button" href="#">В избранном</a>
+            </div>
+            <a class="hotel-stars" href="#"></a>
+            <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
 
           <li class="hotel-card">
@@ -137,12 +141,13 @@
             </a>
             <p class="hotel">Гостиница</p>
             <p class="hotel-card-price">От 2500 р</p>
-            <a class="hotel-card-more button" href="#">Подробнее</a>
-            <a class="hotel-card-favorites button" href="#">В избранное</a>
+            <div class="catalog-buttons">
+              <a class="hotel-card-more button" href="#">Подробнее</a>
+              <a class="hotel-card-favorites button" href="#">В избранное</a>
+            </div>
             <a class="hotel-stars" href="#"></a>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
-
 
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -150,49 +155,50 @@
                 alt="Ночной каньон">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <p >Гостиница</p>
+            <p>Гостиница</p>
             <p class="hotel-card-price">От 1500 р</p>
-            <a class="hotel-card-more button" href="#">Подробнее</a>
-            <a class="hotel-card-favorites button" href="#">В избранное</a>
+            <div class="catalog-buttons">
+              <a class="hotel-card-more button" href="#">Подробнее</a>
+              <a class="hotel-card-favorites button" href="#">В избранное</a>
+            </div>
             <a class="hotel-stars" href="#"></a>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
         <div class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link-active">1</a>
-          </li>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link-active">1</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
 
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <label class="label-quantity-hotel">Гостиниц на странице:
-          <select class="select-quantity" name="quantity-hotel">
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <label class="label-quantity-hotel">Гостиниц на странице:
+            <select class="select-quantity" name="quantity-hotel">
               <option selected value="4">4</option>
               <option value="6">6</option>
               <option value="8">8</option>
-          </select>
-        </label>
-        </form>
-      </div>
+            </select>
+          </label>
+        </div>
       </div>
       <section class="newsletter">
         <h2 class="footer-newsletter">Подпишитесь на рассылку</h2>
@@ -223,8 +229,9 @@
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images\logo\logo-youtube.svg" width="22" height="17" alt="Логотип Youtube">
+              <img src="images/logo/logo-youtube.svg" width="22" height="17" alt="Логотип Youtube">
               <span class="visually-hidden">Youtube</span>
+            </a>
           </li>
         </ul>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
