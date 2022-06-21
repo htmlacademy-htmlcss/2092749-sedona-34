@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <section class="section-index">
+  <div class="div-conteiner">
     <header class="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -18,7 +18,7 @@
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="./index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-about-sedona" href="#">О седоне</a>
@@ -36,7 +36,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <p class="">Избранное</p>
+              <p class="visually-hidden">Избранное</p>
             </a>
           </li>
           <li class="navigation-item-want-here">
@@ -96,7 +96,7 @@
             </section>
           </li>
 
-          <section class="section-points">
+          <div class="div-points">
             <li class="advantage-item-area">
               <h3 class="advantage-title-black">Небольшая площадь</h3>
               <p class="advantage-number-black">№3</p>
@@ -114,21 +114,18 @@
               <p class="advantage-number-black">№5</p>
               <p class="advantage-discription-black">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-          </section>
+          </div>
         </ol>
       </section>
 
       <section class="interested">
         <h2 class="interested-title">Заинтересовались?</h2>
-        <p class="interested-discription">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
-        <a class="interested-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <p class="interested-discription"><pre>Укажите предполагаемые даты поездки,
+и мы покажем вам лучшие предложения гостиниц в Седоне</pre></p>
+        <a class="interested-link" href="./catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
-    </main>
-
-    <footer class="footer">
       <section class="newsletter">
-        <h2 class="footer-newsletter">Подпишитесь на рассылку</h2>
+        <h2 class="section-newsletter">Подпишитесь на рассылку</h2>
         <p class="newsletter-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
@@ -137,6 +134,8 @@
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+    <footer class="footer">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -152,18 +151,18 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images\logo\logo-youtube.svg" width="22" height="17" alt="Логотип Youtube">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <img src="images/logo/logo-youtube.svg" width="22" height="17" alt="Логотип Youtube">
               <span class="visually-hidden">Youtube</span>
           </li>
         </ul>
-        <a class="contacts-phone" href="tel:+78128121212">+7-812-812-12-12</a>
-        <a class="htmlacademy" href="https://htmlacademy.ru">htmlacademy
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="htmlacademy" href="https://htmlacademy.ru">
           <img src="images/logo/logo-html-academy.svg" width="115" height="33" alt="Логотип Академии">
         </a>
       </section>
     </footer>
-  </section>
+  </div>
 </body>
 
 </html>
