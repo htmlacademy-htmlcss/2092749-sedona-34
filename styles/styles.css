@@ -413,12 +413,14 @@ body {
   grid-template-columns: 140px 140px;
   grid-template-rows: 211px 28px 21px 37px 37px;
   height: 438px;
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
 .hotel-card-image{
   grid-column: 1/3;
   grid-row: 1/2;
-
+  margin: 0;
 }
 
 .hotel-card-title {
@@ -432,13 +434,6 @@ body {
   grid-row: 2/3;
 }
 
-.catalog-buttons {
-  /* display: flex;
-  justify-content: space-between; */
-  display: inline-block;
-  justify-content: space-between;
-}
-
 .hotel-card-more {
   font-weight: 700;
   font-size: 16px;
@@ -450,13 +445,14 @@ body {
   color: #FFFFFF;
   background: #756157;
   border-radius: 4px;
-  padding: 9px 15px 8px 15px;
+  /* padding: 9px 15px 8px 15px; */
   /* margin-left: 20px; */
-  margin-right: 20px;
+  /* margin-right: 20px; */
   text-decoration: none;
   width: 140px;
   grid-column: 1/2;
   grid-row: 4/5;
+  padding-top: 9px;
 }
 
 .hotel {
@@ -466,12 +462,13 @@ body {
   color: #333333;
   grid-column: 1/2;
   grid-row: 3/4;
-
+  margin: 0;
 }
 
 .hotel-card-price{
   grid-column: 2/3;
   grid-row: 3/4;
+  margin: 0;
 }
 
 .hotel-card-favorites {
@@ -484,11 +481,12 @@ body {
   color: #FFFFFF;
   background: #82B3D3;
   border-radius: 4px;
-  padding: 9px 15px 8px 15px;
+  /* padding: 9px 15px 8px 15px; */
   width: 140px;
   text-decoration: none;
   grid-column: 2/3;
   grid-row: 4/5;
+  padding-top: 9px;
 }
 
 .hotel-stars{
@@ -505,6 +503,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
 
 .pagination-link-active {
@@ -693,16 +693,16 @@ body {
   flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  column-gap: 18px;
+  column-gap: 48px;
   margin: 0;
   padding: 0;
-
+  justify-content: center;
 }
 
 .catalog {
   margin-bottom: 52px;
-  margin-left: 73px;
-  margin-right: 71px;
+  /* margin-left: 73px;
+  margin-right: 71px; */
 }
 
 .select-control {
@@ -726,13 +726,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  m
 }
 
 .pagination-list {
   display: flex;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .pagination-item:not(:last-child) {
