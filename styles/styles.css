@@ -150,6 +150,8 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-top: -5px;
+  /* background-image: url("../images/decorative/divider.svg");
+  background-position: bottom; */
 }
 
 .welcome-title {
@@ -218,6 +220,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   padding-top: 92px;
+  padding-left: 85px;
+  padding-right: 85px;
+  margin: 0;
 }
 
 .section-real-city {
@@ -234,7 +239,6 @@ body {
 .features-item {
   width: 400px;
   padding-top: 183px;
-  padding-bottom: 81px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -283,18 +287,18 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   color: #FFFFFF;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .advantage-discription {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   color: #FFFFFF;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding:30px 85px 92px 85px;
+  margin: 0;
 }
 
 .advantage-list {
@@ -312,6 +316,7 @@ body {
   color: #333333;
   padding-left: 85px;
   padding-right: 85px;
+  padding-bottom: 81px;
   margin: 0;
 }
 
@@ -608,6 +613,10 @@ body {
 .hotel-stars {
   grid-column: 1/2;
   grid-row: 5/6;
+  background-image: url("../images/icon/icon-star.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+
 }
 
 .hotel-rating {
@@ -621,6 +630,8 @@ body {
   color: #333333;
   background: #F2F2F2;
   border-radius: 4px;
+  background-position: center;
+  padding-top: 9px;
 }
 
 .pagination-link-active {
