@@ -150,8 +150,12 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-top: -5px;
-  /* background-image: url("../images/decorative/divider.svg");
-  background-position: bottom; */
+}
+
+.section-welcome::after{
+  content: url("../images/decorative/divider.svg");
+  width: 1200px;
+  height: 57px;
 }
 
 .welcome-title {
@@ -681,7 +685,11 @@ body {
   background: #756157;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.3);
+}
 
+.btn:disabled{
+  background: #E5E5E5;
+  border-radius: 4px;
 }
 
 .button-active {
@@ -700,6 +708,11 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-active:disabled{
+  background: #E5E5E5;
+  border-radius: 4px;
+}
+
 .other-button:hover {
   background: #68A2CA;
   border-radius: 4px;
@@ -709,6 +722,11 @@ body {
   background: #82B3D3;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.other-button:disabled{
+  background: #E5E5E5;
+  border-radius: 4px;
 }
 
 .vk-icon {
@@ -865,11 +883,11 @@ body {
 }
 
 .navigation-link-batton {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   text-transform: uppercase;
