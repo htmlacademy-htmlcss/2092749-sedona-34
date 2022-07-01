@@ -84,6 +84,7 @@
         </form>
       </div>
       <div class="catalog">
+
         <div class="sorting-container">
           <p class="search-results">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
@@ -93,12 +94,15 @@
           </select>
 
           <a class="button icon-table" href="#">
+            <svg class="button-icon-table" width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
             <span class="visually-hidden">Показать таблицу</span>
           </a>
           <a class="button icon-slideshow" href="#">
+            <svg class="button-icon-slideshow" width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
             <span class="visually-hidden">Показать слайды</span>
           </a>
           <a class="button icon-list" href="#">
+            <svg class="button-icon-list" width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
@@ -113,7 +117,13 @@
             <p class="hotel-card-price">От 4000 р</p>
             <a class="hotel-card-more button btn" href="#">Подробнее</a>
             <a class="hotel-card-favorites button other-button" href="#">В избранное</a>
-            <a class="hotel-stars" href="#"></a>
+            <div class="stars">
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+            </div>
+            <!-- <a class="hotel-stars" href="#"></a> -->
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </li>
 
@@ -127,7 +137,12 @@
             <p class="hotel-card-price">От 5000 р</p>
             <a class="hotel-card-more button btn" href="#">Подробнее</a>
             <a class="hotel-card-favorites button-active" href="#">В избранном</a>
-            <a class="hotel-stars" href="#"></a>
+            <div class="stars">
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+            </div>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
 
@@ -141,7 +156,11 @@
             <p class="hotel-card-price">От 2500 р</p>
             <a class="hotel-card-more button btn" href="#">Подробнее</a>
             <a class="hotel-card-favorites button other-button" href="#">В избранное</a>
-            <a class="hotel-stars" href="#"></a>
+            <div class="stars">
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+            </div>
             <span class="hotel-rating">Рейтинг: 6,9</span>
           </li>
 
@@ -155,7 +174,10 @@
             <p class="hotel-card-price">От 1500 р</p>
             <a class="hotel-card-more button btn" href="#">Подробнее</a>
             <a class="hotel-card-favorites button other-button" href="#">В избранное</a>
-            <a class="hotel-stars" href="#"></a>
+            <div class="stars">
+              <span class="rating-star">Звезда</span>
+              <span class="rating-star">Звезда</span>
+            </div>
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
@@ -199,7 +221,7 @@
         <p class="newsletter-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="ваш e-mail" />
+          <input class="input-email" type="email" name="newsletter-email" id="newsletter-email" placeholder="ваш e-mail" />
           <button class="button newsletter-button other-button" type="submit">Подписаться</button>
         </form>
       </section>
