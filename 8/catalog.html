@@ -24,7 +24,7 @@
             <a class="navigation-link-about-sedona" href="about.html">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-hotel" href="./catalog.html">Гостиницы</a>
+            <a class="navigation-link-hotel active-page-catalog" href="./catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="navigation-item-want-here">
-            <a class="navigation-link-batton btn" href="#">Хочу сюда!</a>
+            <a class="navigation-link-button btn" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -79,8 +79,32 @@
               <input type="radio" name="Гостиница" value="apartments">Апартаменты
             </label>
           </fieldset>
-          <button class="button-submit other-button">Применить</button>
-          <button class="button-reset">Сбросить</button>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" placeholder="от" value="0" name="min-price">
+              </label>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" placeholder="до" value="9000" name="max-price">
+              </label>
+            </div>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+          </fieldset>
+          <div class="div-button">
+            <button class="button-submit other-button">Применить</button>
+            <button class="button-reset">Сбросить</button>
+          </div>
         </form>
       </div>
       <div class="catalog">
@@ -88,7 +112,7 @@
         <div class="sorting-container">
           <p class="search-results">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала дешёвые</option>
+            <option value="popular">Сначала дешевые</option>
             <option value="cheap">Сначала дорогие</option>
             <option value="popular">Сначала популярное</option>
           </select>
