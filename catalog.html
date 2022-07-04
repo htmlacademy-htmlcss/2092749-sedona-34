@@ -34,8 +34,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link buton-favorite" href="#">
               <p class="visually-hidden">Избранное</p>
+              <span class="favorite-number">12</span>
             </a>
           </li>
           <li class="navigation-item-want-here">
@@ -61,21 +62,41 @@
         <form action class="hotel-forms" method="post">
           <fieldset class="catalog-filter-group-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <label> <input type="checkbox" checked>Бассейны</label>
-            <label> <input type="checkbox" checked>Парковка</label>
-            <label> <input type="checkbox">Wi-Fi </label>
+            <label class="control catalog-filter-item">
+              <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+              <span class="control-mark" ></span>
+              <span class="control-label">Бассейн</span>
+            </label>
+            <label control catalog-filter-item>
+              <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Парковка</span>
+            </label>
+            <label control catalog-filter-item>
+              <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+              <span class="control-mark"></span>
+              <span class="control-label">Wi-Fi</span>
+            </label>
           </fieldset>
 
           <fieldset class="catalog-filter-group-type">
             <legend class="catalog-filter-title">Тип жилья:</legend>
-            <label>
-              <input type="radio" name="Гостиница" value="hotel" checked>Гостиница
+            <label class="catalog-filter-item control">
+              <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Гостиница</span>
             </label>
-            <label>
-              <input type="radio" name="Гостиница" value="motel">Мотель
+
+            <label class="catalog-filter-item control">
+              <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel">
+              <span class="control-mark"></span>
+              <span class="control-label">Мотель</span>
             </label>
-            <label>
-              <input type="radio" name="Гостиница" value="apartments">Апартаменты
+
+            <label class="catalog-filter-item control">
+              <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel">
+              <span class="control-mark"></span>
+              <span class="control-label">Аппартаменты</span>
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
