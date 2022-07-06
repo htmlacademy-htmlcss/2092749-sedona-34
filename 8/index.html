@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="navigation-item-want-here">
-            <a class="navigation-link-button btn" href="#">Хочу сюда!</a>
+            <button class="navigation-link-button btn" type="button" onclick="document.querySelector('.modal-container').classList.remove('modal-container-close')">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -134,11 +134,11 @@
         <h2 class="section-newsletter">Подпишитесь на рассылку</h2>
         <p class="newsletter-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
-        <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="input-email" type="email" name="newsletter-email" id="newsletter-email"
             placeholder="Ваш e-mail" />
-          <button class="button newsletter-button  other-button" type="submit">Подписаться</button>
+          <button class="button newsletter-button  other-button" type="button">Подписаться</button>
         </form>
       </section>
     </main>
@@ -170,24 +170,49 @@
         </a>
       </section>
     </footer>
-    <!-- <div class="modal-container">
-      <div class="modal modal-auth">
-        <button class="modal-close-button">
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search-hotels">
+        <button class="modal-close-button" type="button"
+        onclick="document.querySelector('.modal-container').classList.add('modal-container-close')">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="auth-form" action="#" method="post">
-            <label class="arrival-date" value="27 апреля 2020">Дата Заезда:
-            <input class="input-arrival-date"  type="date" name="arrival">
-            </label>
-            <label class="arrival-date" value="27 апреля 2020">Дата Выезда:
-              <input class="input-arrival-date"  type="date" name="arrival">
-            </label>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+       <div class="modal-content">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-stok">
+                <label class="arrival-date" for="arrival" >Дата Заезда:</label>
+                <input class="input-arrival-date" id="arrival" type="text" placeholder="27 апреля 2020">
+                <!-- <button class="date-button" type="button"> -->
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+                <p class="date-text">Мы не можем отпраить вас в прошлое</p>
+            </div>
+          <div class="modal-stok">
+            <label class="departure-date" for="departure">Дата Выезда:</label>
+            <input class="text-input" id="departure" type="text" placeholder="1 сентября 2021">
+            <!-- <button class="date-button" type="button"> -->
+              <span class="visually-hidden">Календарь</span>
+            </button>
+             <p class="date-text-two">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="modal-stok-two">
+            <div class="field">
+                <label class="field-label" for="adult">Взрослые:</label>
+                <button class="button-adult" id="adult" type="button"></button>
+                <label class="field-label-child" for="child">Дети:</label>
+                <button class="button-child" id="child" type="button"></button>
+              <span class="tooltip">
+                <span class="tooltip-text" role="tooltip" id="tooltip-children">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </div>
+          </div>
+          <button class="button-find other-button" type="button">Найти</button>
           </form>
-        </section>
-      </div> -->
-    <!-- </div> -->
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

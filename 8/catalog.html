@@ -60,7 +60,7 @@
           </li>
         </ol>
 
-        <form class="hotel-forms" action="#" method="get">
+        <form class="hotel-forms" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <label class="control catalog-filter-item">
@@ -68,12 +68,12 @@
               <span class="control-mark" ></span>
               <span class="control-label">Бассейн</span>
             </label>
-            <label class="catalog-filter-item">
-              <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+            <label class="control catalog-filter-item">
+              <input class="control control-input visually-hidden" type="checkbox" name="parking" checked>
               <span class="control-mark"></span>
               <span class="control-label">Парковка</span>
             </label>
-            <label class="catalog-filter-item" >
+            <label class="control catalog-filter-item" >
               <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
               <span class="control-mark"></span>
               <span class="control-label">Wi-Fi</span>
@@ -84,30 +84,30 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <label class="catalog-filter-item control">
               <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel" checked>
-              <span class="control-mark"></span>
+              <span class="control-mark radio-button"></span>
               <span class="control-label">Гостиница</span>
             </label>
 
             <label class="catalog-filter-item control">
               <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel">
-              <span class="control-mark"></span>
+              <span class="control-mark radio-button"></span>
               <span class="control-label">Мотель</span>
             </label>
 
             <label class="catalog-filter-item control">
               <input class="control-input visually-hidden" type="radio" name="Гостиница" value="hotel">
-              <span class="control-mark"></span>
+              <span class="control-mark radio-button"></span>
               <span class="control-label">Аппартаменты</span>
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label">
-                <input class="range-input" type="number" placeholder="от" value="0" name="min-price">
+              <label class="catalog-filter-label label-min-price">
+                <input class="range-input filter-min-price" type="number" placeholder="от" value="0" name="min-price">
               </label>
-              <label class="catalog-filter-label">
-                <input class="range-input" type="number" placeholder="до" value="9000" name="max-price">
+              <label class="catalog-filter-label label-max-price">
+                <input class="range-input filter-max-price" type="number" placeholder="до" value="9000" name="max-price">
               </label>
             </div>
             <div class="range">
@@ -123,8 +123,8 @@
             </div>
           </fieldset>
           <div class="div-button">
-            <button class="button-submit other-button">Применить</button>
-            <button class="button-reset">Сбросить</button>
+            <button class="button-submit other-button" type="submit" type="reset">Применить</button>
+            <button class="button-reset" type="submit" type="reset">Сбросить</button>
           </div>
         </form>
       </div>
