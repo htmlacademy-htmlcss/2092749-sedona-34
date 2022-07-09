@@ -1742,6 +1742,7 @@ body {
 }
 
 .button-child-plus {
+  position: relative;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1754,6 +1755,16 @@ body {
 }
 
 .plus {
+  position: absolute;
+  background-image: url("../images/icon/icon-plus.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  top: 19px;
+  left: 13px;
+}
+
+.plus-child {
   position: absolute;
   background-image: url("../images/icon/icon-plus.svg");
   background-repeat: no-repeat;
@@ -1777,6 +1788,7 @@ body {
   height: 48px;
   border: none;
   background: #f2f2f2;
+  text-align: center;
 }
 
 .input-child {
@@ -1784,6 +1796,7 @@ body {
   height: 48px;
   border: none;
   background: #f2f2f2;
+  text-align: center;
 }
 
 .div-adult {
