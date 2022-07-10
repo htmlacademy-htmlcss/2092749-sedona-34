@@ -63,7 +63,7 @@ body {
   padding-right: 34px;
 }
 
-.navigation-user .navigation-item-user:nth-child(1) .navigation-link {
+.navigation-item-user:nth-child(1) .navigation-link {
   background-image: url("../images/icon/search.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -73,7 +73,7 @@ body {
   padding-left: 12px;
 }
 
-.navigation-user .navigation-item-user:nth-child(2) .navigation-link {
+.navigation-item-user:nth-child(2) .navigation-link {
   background-image: url("../images/icon/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
