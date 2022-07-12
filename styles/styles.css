@@ -61,7 +61,7 @@ body {
   margin-bottom: -5px;
 }
 
-.navigation-item{
+.navigation-item {
   padding-right: 34px;
 }
 
@@ -112,7 +112,7 @@ body {
   padding: 0;
 }
 
-.navigation-div{
+.navigation-div {
   min-width: 962px;
   display: flex;
   justify-content: space-between;
@@ -252,10 +252,9 @@ body {
   line-height: 21px;
 }
 
-.catalog-filter-group-infrastructure:focus{
-
+/* .catalog-filter-group-infrastructure:focus {
   color: red;
-}
+} */
 
 .catalog-filter-title {
   margin: 0;
@@ -379,7 +378,7 @@ body {
   width: 800px;
 }
 
-.title-hotel{
+.title-hotel {
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -597,7 +596,7 @@ body {
   padding-bottom: 10px;
 }
 
-.breadcrumbs-arrow{
+.breadcrumbs-arrow {
   position: absolute;
   padding-left: 22px;
   padding-top: 11px;
@@ -1001,11 +1000,9 @@ body {
 
 .icon-table {
   position: relative;
-  border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin-left: 8px;
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .icon-table:hover {
@@ -1393,7 +1390,7 @@ body {
   margin-top: 2px;
 }
 
-.input-email{
+.input-email {
   display: inline-block;
   margin: 0;
   padding: 20px 22px 19px 22px;
@@ -1408,7 +1405,7 @@ body {
   outline: none;
 }
 
-.input-email:focus-visible{
+.input-email:focus-visible {
   border: 2px solid #000000;
   border-radius: 10px 0 0 10px;
 }
@@ -1507,7 +1504,7 @@ body {
   margin-left: 73px;
   margin-right: 71px;
   padding-top: 28px;
-  border-top: 1px solid #E6E6E6;;
+  border-top: 1px solid #e6e6e6;
 }
 
 .control-mark {
@@ -1592,7 +1589,9 @@ body {
   margin-left: 46px;
 }
 
-.vk-button, .telegram-button, .youtube-button{
+.vk-button,
+.telegram-button,
+.youtube-button {
   padding: 20px;
 }
 
@@ -1605,12 +1604,6 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.modal-content {
-  display: flex;
-  grid-template-columns: 288px 230px;
-  grid-template-rows: 50px 50px 50px;
 }
 
 .modal-container {
@@ -1680,35 +1673,35 @@ body {
   font-family: inherit;
 }
 
-.input-arrival-date:hover{
+.input-arrival-date:hover {
   background: #e6e6e6;
   border-radius: 4px;
 }
 
-.input-arrival-date:focus{
+.input-arrival-date:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
   background: #e6e6e6;
 }
 
-.input-arrival-date:active{
+.input-arrival-date:active {
   background: #ffffff;
   border: 2px solid #000000;
   border-radius: 4px;
 }
 
-.text-input:hover{
+.text-input:hover {
   background: #e6e6e6;
   border-radius: 4px;
 }
 
-.text-input:focus{
+.text-input:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
   background: #e6e6e6;
 }
 
-.text-input:active{
+.text-input:active {
   background: #ffffff;
   border: 2px solid #000000;
   border-radius: 4px;
@@ -1727,20 +1720,20 @@ body {
   cursor: pointer;
 }
 
-.modal-close-button:hover{
+.modal-close-button:hover {
   background: #e6e6e6;
   cursor: pointer;
 }
 
-.modal-close-button:focus{
-  background: #E6E6E6;
+.modal-close-button:focus {
+  background: #e6e6e6;
   border: 3px solid #83b3d3;
   cursor: pointer;
 }
 
-.modal-close-button:active{
+.modal-close-button:active {
   opacity: 0.3;
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 
 .calendar-icon {
@@ -1825,14 +1818,11 @@ body {
   height: 50px;
   border: none;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
 .button-adult-minus {
   border-radius: 4px 0 0 4px;
-}
-
-.button-adult-minus:hover{
-  b
 }
 
 .button-adult-plus {
@@ -1855,6 +1845,7 @@ body {
   height: 50px;
   border: none;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
 .plus-child {
@@ -1869,49 +1860,52 @@ body {
   text-indent: 100%;
 }
 
-.minus-adult{
+.minus-adult {
   position: absolute;
   display: inline-block;
   width: 13px;
   height: 1px;
-  background: #000000;
+  fill: #000000;
   opacity: 0.3;
 }
 
-.minus-adult:hover{
-  background: #000000;
+.minus-adult:hover {
+  fill: #000000;
 }
 
-.minus-adult:focus{
+.minus-adult:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
+  fill: #000000;
 }
 
-.minus-adult:active{
+.minus-adult:active {
   background: #000000;
   opacity: 0.2;
 }
 
-.plus-adult{
+.plus-adult {
   position: absolute;
   display: inline-block;
   width: 13px;
   height: 13px;
   top: 19px;
   left: 13px;
+  opacity: 0.3;
+  fill: #000000;
 }
 
-.plus-adult:hover{
-  background: #000000;
+.plus-adult:hover {
+  fill: #000000;
 }
 
-.plus-adult:focus{
+.plus-adult:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
-.plus-adult:active{
-  background: #000000;
+.plus-adult:active {
+  fill: #000000;
   opacity: 0.2;
 }
 
@@ -2014,9 +2008,9 @@ body {
   border-radius: 10px;
   display: block;
   width: 256px;
-  top: calc(100% + 4px);
+  top: 395px;
   background-color: #242424;
-  left: 40%;
+  left: 482px;
   transform: translateX(-50%);
   z-index: 1;
   opacity: 1;
@@ -2033,4 +2027,14 @@ body {
   background-color: #242424;
   content: "";
   transform: rotate(45deg);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
