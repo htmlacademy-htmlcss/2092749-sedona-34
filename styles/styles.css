@@ -34,7 +34,7 @@ body {
 .div-conteiner {
   width: 1200px;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,7 +120,7 @@ body {
 
 .navigation-list {
   margin-top: 0;
-  max-width: 390px;
+  max-width: 460px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -194,7 +194,7 @@ body {
   color: #000000;
   margin: 0;
   margin-top: 63px;
-  margin-left: 290px;
+  margin-left: 283px;
   margin-right: 290px;
 }
 
@@ -206,6 +206,7 @@ body {
   color: #333333;
   margin: 0;
   padding: 30px 272px 90px 273px;
+  white-space: nowrap;
 }
 
 .section-subtitle {
@@ -230,6 +231,12 @@ body {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+}
+
+.control-input:focus ~ .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
 }
 
 .catalog-filter-group-infrastructure {
@@ -374,6 +381,9 @@ body {
 
 .title-hotel{
   margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .list-points {
@@ -663,11 +673,11 @@ body {
 .hotel-card {
   display: grid;
   width: 340px;
-  padding: 20px;
-  margin-right: 18px;
+  padding: 19px;
+  margin-right: -14px;
   box-sizing: border-box;
   grid-template-columns: 140px 140px;
-  gap: 16px 20px;
+  gap: 14px 20px;
   text-align: left;
 }
 
@@ -726,6 +736,8 @@ body {
   border: none;
   display: inline-block;
   box-sizing: border-box;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .hotel {
@@ -1153,6 +1165,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   border: none;
+  font-family: inherit;
 }
 
 .interested {
@@ -1209,6 +1222,7 @@ body {
   border: 2px solid #ffffff;
   box-shadow: 0 0 0 3px #81b3d2;
   border-radius: 0 4px 4px 0;
+  outline-color: #81b3d2;
 }
 
 .filter-max-price:active {
@@ -1231,6 +1245,7 @@ body {
   border: 2px solid #ffffff;
   box-shadow: 0 0 0 3px #81b3d2;
   border-radius: 4px 0 0 4px;
+  outline-color: #81b3d2;
 }
 
 .filter-min-price:active {
@@ -1374,7 +1389,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  margin-left: 163px;
+  margin-left: 172px;
   margin-top: 2px;
 }
 
@@ -1391,9 +1406,12 @@ body {
   line-height: 21px;
   border: none;
   outline: none;
-
 }
 
+.input-email:focus-visible{
+  border: 2px solid #000000;
+  border-radius: 10px 0 0 10px;
+}
 
 .images-welcome-sedona {
   display: flex;
@@ -1409,6 +1427,7 @@ body {
   padding: 0;
   justify-content: center;
   margin-bottom: 45px;
+  margin-right: 36px;
 }
 
 .catalog {
@@ -1447,6 +1466,7 @@ body {
   width: 48px;
   height: 48px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .sorting-container {
@@ -1617,22 +1637,6 @@ body {
   box-sizing: border-box;
 }
 
-.modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 54px;
-  right: 70px;
-  width: 53px;
-  height: 53px;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  border: none;
-  background-image: url("../images/icon/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
 .modal-title {
   font-weight: 700;
   font-size: 30px;
@@ -1673,6 +1677,70 @@ body {
   padding: 19px 14px 19px;
   border: none;
   box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input-arrival-date:hover{
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+.input-arrival-date:focus{
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+  background: #e6e6e6;
+}
+
+.input-arrival-date:active{
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.text-input:hover{
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+.text-input:focus{
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+  background: #e6e6e6;
+}
+
+.text-input:active{
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button:hover{
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+.modal-close-button:focus{
+  background: #E6E6E6;
+  border: 3px solid #83b3d3;
+  cursor: pointer;
+}
+
+.modal-close-button:active{
+  opacity: 0.3;
+  background: #E6E6E6;
 }
 
 .calendar-icon {
@@ -1763,6 +1831,10 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.button-adult-minus:hover{
+  b
+}
+
 .button-adult-plus {
   border-radius: 0 4px 4px 0;
   position: relative;
@@ -1785,18 +1857,6 @@ body {
   background: #f2f2f2;
 }
 
-.plus {
-  position: absolute;
-  background-image: url("../images/icon/icon-plus.svg");
-  background-repeat: no-repeat;
-  width: 13px;
-  height: 13px;
-  top: 19px;
-  left: 13px;
-  overflow: hidden;
-  text-indent: 100%;
-}
-
 .plus-child {
   position: absolute;
   background-image: url("../images/icon/icon-plus.svg");
@@ -1809,14 +1869,50 @@ body {
   text-indent: 100%;
 }
 
-.minus {
+.minus-adult{
   position: absolute;
   display: inline-block;
   width: 13px;
   height: 1px;
   background: #000000;
   opacity: 0.3;
-  overflow: hidden;
+}
+
+.minus-adult:hover{
+  background: #000000;
+}
+
+.minus-adult:focus{
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.minus-adult:active{
+  background: #000000;
+  opacity: 0.2;
+}
+
+.plus-adult{
+  position: absolute;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  top: 19px;
+  left: 13px;
+}
+
+.plus-adult:hover{
+  background: #000000;
+}
+
+.plus-adult:focus{
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.plus-adult:active{
+  background: #000000;
+  opacity: 0.2;
 }
 
 .input-adult {

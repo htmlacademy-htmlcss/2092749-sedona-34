@@ -195,13 +195,14 @@
         <button class="modal-close-button" type="button"
           onclick="document.querySelector('.modal-container').classList.add('modal-container-close')">
           <span class="visually-hidden">Закрыть.</span>
+          <svg width="13" height="13" role="img" aria-label="Закрыть." viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
         </button>
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <div class="modal-content">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-stok">
                 <label class="arrival-date" for="arrival">Дата Заезда:</label>
-                <input class="input-arrival-date" id="arrival" type="text" required placeholder="27 апреля 2020">
+                <input class="input-arrival-date" id="arrival" name="arrival" type="text" required placeholder="27 апреля 2020">
                 <svg class="calendar-icon" role="img" aria-label="Иконка календаря." width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <g opacity=".3" fill="#000">
@@ -217,7 +218,7 @@
               </div>
               <div class="modal-stok">
                 <label class="departure-date" for="departure">Дата Выезда:</label>
-                <input class="text-input" id="departure" type="text" required placeholder="1 сентября 2021">
+                <input class="text-input" id="departure" name="departure" type="text" required placeholder="1 сентября 2021">
                 <svg class="calendar-icon-departure-date" role="img" aria-label="Иконка календаря." width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <g opacity=".3" fill="#000">
@@ -236,11 +237,11 @@
                 <div class="div-adult">
                   <label class="field-label" for="adult">Взрослые:</label>
                   <button class="button-adult-minus"  type="button">
-                    <span class="minus">Знак минуса</span>
+                    <svg class="minus-adult" width="13" height="1" fill="currentColor" role="img" aria-label="Знак минус." viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
                   </button>
-                  <input class="input-adult" type="number" required id="adult" placeholder="2">
+                  <input class="input-adult" type="number" name="adult" required id="adult" placeholder="2">
                   <button class="button-adult-plus" type="button">
-                    <span class="plus">Знак плюса</span>
+                    <svg class="plus-adult" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" role="img" aria-label="Знак плюс." xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3"/></svg>
                   </button>
                 </div>
                 <div class="div-child">
@@ -262,11 +263,11 @@
                       с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
                   </button>
                   <button class="button-child-minus" type="button">
-                    <span class="minus">Знак минуса</span>
+                    <svg class="minus-adult" width="13" height="1" fill="currentColor" role="img" aria-label="Знак минус." viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
                   </button>
-                  <input class="input-child" type="number" id="child"  placeholder="1">
+                  <input class="input-child" name="child" type="number" id="child"  placeholder="1">
                   <button class="button-child-plus" id="child-plus" type="button">
-                    <span class="plus-child">Знак плюса</span>
+                    <svg class="plus-adult" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" role="img" aria-label="Знак плюс." xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3"/></svg>
                   </button>
                 </div>
               </div>
