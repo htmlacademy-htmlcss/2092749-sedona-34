@@ -59,6 +59,7 @@ body {
   padding-right: 30px;
   padding-left: 70px;
   margin-bottom: -5px;
+  overflow: hidden;
 }
 
 .navigation-item {
@@ -1405,8 +1406,13 @@ body {
   outline: none;
 }
 
+.input-adult::placeholder, .text-input::placeholder, .input-arrival-date::placeholder, .input-child::placeholder {
+    color: #000000;
+    font: inherit;
+}
+
 .input-email:focus-visible {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   border-radius: 10px 0 0 10px;
 }
 
@@ -1423,7 +1429,7 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 75px;
   margin-right: 36px;
 }
 
@@ -1783,6 +1789,10 @@ body {
   height: 60px;
 }
 
+.button-find:hover{
+  border-radius: 10px;
+}
+
 .date-text {
   font-weight: 400;
   font-size: 16px;
@@ -1871,12 +1881,14 @@ body {
 
 .minus-adult:hover {
   fill: #000000;
+  opacity: 100%;
 }
 
 .minus-adult:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
-  fill: #000000;
+  width: 25px;
+  height: 25px;
 }
 
 .minus-adult:active {
@@ -1897,6 +1909,7 @@ body {
 
 .plus-adult:hover {
   fill: #000000;
+  opacity: 100%;
 }
 
 .plus-adult:focus {
@@ -1965,7 +1978,7 @@ body {
   align-self: center;
 }
 
-.tooltip-toogle {
+.tooltip-toggle {
   position: relative;
   display: block;
   border: none;
@@ -1977,7 +1990,7 @@ body {
   padding-right: 13px;
 }
 
-/* .tooltip-toogle:hover {
+/* .tooltip-toggle:hover {
   position: absolute;
   font-weight: 400;
   font-size: 16px;
@@ -1997,29 +2010,36 @@ body {
   text-align: left;
 } */
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 .tooltip-text {
   position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  padding: 15px 3px 18px 10px;
+  padding: 15px 18px 18px 22px;
   text-transform: none;
   border-radius: 10px;
-  display: block;
   width: 256px;
-  top: 395px;
+  top: 398px;
+  display: block;
   background-color: #242424;
   left: 482px;
   transform: translateX(-50%);
   z-index: 1;
   opacity: 1;
   text-align: left;
+  box-sizing: border-box;
+  display: none;
 }
 
 .tooltip-text::before {
   position: absolute;
-  bottom: 125px;
+  bottom: 126px;
   left: 50%;
   width: 19px;
   height: 19px;
