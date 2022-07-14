@@ -253,10 +253,6 @@ body {
   line-height: 21px;
 }
 
-/* .catalog-filter-group-infrastructure:focus {
-  color: red;
-} */
-
 .catalog-filter-title {
   margin: 0;
   padding-bottom: 29px;
@@ -1989,26 +1985,6 @@ body {
   padding-top: 6px;
   padding-right: 13px;
 }
-
-/* .tooltip-toggle:hover {
-  position: absolute;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  padding: 15px 3px 18px 10px;
-  text-transform: none;
-  border-radius: 10px;
-  display: block;
-  width: 256px;
-  top: calc(100% + 4px);
-  background-color: #242424;
-  left: 40%;
-  transform: translateX(-50%);
-  z-index: 1;
-  opacity: 1;
-  text-align: left;
-} */
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
